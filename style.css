@@ -1,0 +1,62 @@
+body {
+    background-color: lightblue;
+}
+
+.btn-success {
+    font-size: 30px;
+    letter-spacing: 4px;
+}
+
+.emoji {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 23px;
+    color: white; 
+}
+
+h3 {
+    font-size: 20px;
+    color: white;
+}
+
+span {
+    color: blue;
+}
+
+.emoji2 {
+    font-size: 25px;
+}
+
+b {
+    color: green;
+    background-color: white;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
+    border-radius: 10px;
+}
+
+#camera, #output {
+  border: 2px dashed black;
+}
+
+.copy_right_footer {
+    position: fixed;
+    color: rgb(34, 204, 133);
+    bottom: 0;
+    padding-top: 5px;
+    width: 100%;
+    font-size: 18px;
+    font-family: cursive;
+    background-color: white;
+    line-height: 3;
+    text-align: center;
+    text-shadow: 5px 5px 5px rgb(206, 195, 195);
+}
+
+#prediction_name, #prediction_emoji {
+    font-size: 40px;
+}

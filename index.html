@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Hand Gusture Web App </title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"> </script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"> </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"> </script>
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"> </script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="text-center container">
+            <div class="header">
+                <br>
+                <button class="btn btn-success"> HAND GUSTURE WEB APP
+                    <br>
+                    <div class="emoji">
+                        <span> &#9995; </span>
+                        <span> &#128077; </span>
+                        <span> &#128070; </span>
+                        <span> &#128076; </span>
+                        <span> &#9996; </span>
+                        <span> &#128078; </span>
+                    </div>
+                </button>
+            </div>
+            <h2> Take a selfie of a gueture to know about its meaning. </h2>
+            <h3> On the following guetures, the model is trained -  </h3>
+            <div class="emoji2">
+                <span> &#128077; </span>
+                <span> | </span>
+                <span> &#128078; </span>
+                <span> | </span>
+                <span> &#128076; </span> 
+                <span> | </span>
+                <span> &#9996; </span>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div id="camera_div">
+                        <b> Webcam View: </b>
+                        <br>
+                        <div id="camera"> </div>
+                        <br>
+                        <button class="btn btn-info" onclick="capture_image();"> Capture Image </button>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div id="prediction_div">
+                        <b> Prediction: </b>
+                        <h4 id="prediction_name"> </h4>
+                        <h4 id="prediction_emoji">  </h4>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div id="output_div">
+                        <b> Image Output: </b>
+                        <br>
+                        <div id="output"> </div>   
+                        <br> <br>      
+                        <button class="btn btn-primary" onclick="identify_image();"> Predict Image </button>   
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br> <br> <br> <br>
+        <div class="copy_right_footer">
+            <h4> Developed By - Kushal Datta.V </h4>
+        </div>
+        <script src="main.js"> </script>
+    </body>
+</html>
